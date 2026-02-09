@@ -39,7 +39,7 @@ A **Bitwarden-compatible** server that runs on **Cloudflare Workers**.
 
 ### One-click deploy
 
-[![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/shuaiplus/nodewarden)
+[![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/shuaiplus/nodewarden/tree/d1-test)
 
 **Deploy steps:**
 
