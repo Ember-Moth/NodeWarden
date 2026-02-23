@@ -11,7 +11,8 @@ export function formatAttachments(attachments: Attachment[]): any[] | null {
   return attachments.map(a => ({
     id: a.id,
     fileName: a.fileName,
-    size: Number(a.size) || 0,  // Android expects Int, not String
+    // Bitwarden clients decode attachment size as string in cipher payloads.
+    size: String(Number(a.size) || 0),
     sizeName: a.sizeName,
     key: a.key,
     url: `/api/ciphers/${a.cipherId}/attachment/${a.id}`,  // Android requires non-null url!
